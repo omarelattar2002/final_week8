@@ -1,0 +1,26 @@
+{
+  "name": "final3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run bundle && npm-run-all --parallel watch serve",
+    "bundle": "webpack",
+    "watch": "webpack --watch",
+    "serve": "cd dist && live-server"
+  },
+  "author": "omar",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/uuid": "^9.0.8",
+    "npm-run-all": "^4.1.5",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
